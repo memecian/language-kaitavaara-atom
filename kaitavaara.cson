@@ -4,14 +4,7 @@
 
 'patterns' : [
   {
-    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
-    'name': 'constant.numeric.mylanguage'
-  },
-  {
-    'match' : '\\b(SAY|AUTO|SIZE|MOVE|GAP|SHOW|ANIM|UANIM|FRAME|CHOOSE|SHAW|GOTO|CHECK|SHAWCHECK|LEAVE|MENU)\\b'
-    'name' : 'instruction.kai'
-  },
-  {
+#multi-line comments (Ex.: /*...*/)
     'begin' : '['
     'beginCaptures':
         '0':
@@ -20,11 +13,22 @@
     'endCaptures':
         '0':
             'name': 'punctuation.definition.block_comment.end.kai'
-    'name': 'string.quoted.single.mylanguage'
+    'name': 'block_comment.kai'
   },
+#line comment (Ex.: //... until newline)
   {
     'begin' : '#'
     'end' : '\n'
     'name' : 'line_comment.kai'
+  },
+#labels (:example)
+  {
+    'match' : ':\\w+'
+    'name' : 'label.kai'
+  }
+#instructions
+  {
+    'match' : '\\b(SAY|AUTO|SIZE|MOVE|GAP|SHOW|ANIM|UANIM|FRAME|CHOOSE|SHAW|GOTO|CHECK|SHAWCHECK|LEAVE|MENU)\\b'
+    'name' : 'instruction.kai'
   },
 ]
