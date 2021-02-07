@@ -1,7 +1,8 @@
 {
   "name": "language-kaitavaara-atom",
-  "version": "0.0.0",
+  "version": "from-git",
   "description": "Kaitavaara Script language support in Atom",
+  "author": "memecian",
   "engines": {
     "atom": "*"
   },
