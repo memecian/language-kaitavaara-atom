@@ -1,0 +1,24 @@
+'scopeName': 'source.kai'
+'name': 'Kaitavaara Script'
+'fileTypes': ['kai', 'kai.txt']
+
+'patterns' : [
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.mylanguage'
+  },
+  {
+    'match' : '\\b(SAY|AUTO|SIZE|MOVE|GAP|SHOW|ANIM|UANIM|FRAME|CHOOSE|SHAW|GOTO|CHECK|SHAWCHECK|LEAVE|MENU)\\b'
+    'name' : 'instruction.kai'
+  },
+  {
+    'begin' : '['
+    'end' : ']'
+    'name' : 'block_comment.kai'
+  },
+  {
+    'begin' : '#'
+    'end' : '\n'
+    'name' : 'line_comment.kai'
+  },
+]
