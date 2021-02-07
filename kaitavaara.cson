@@ -13,8 +13,14 @@
   },
   {
     'begin' : '['
+    'beginCaptures':
+        '0':
+            'name': 'punctuation.definition.block_comment.begin.kai'
     'end' : ']'
-    'name' : 'block_comment.kai'
+    'endCaptures':
+        '0':
+            'name': 'punctuation.definition.block_comment.end.kai'
+    'name': 'string.quoted.single.mylanguage'
   },
   {
     'begin' : '#'
